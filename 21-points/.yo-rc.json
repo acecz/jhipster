@@ -4,7 +4,7 @@
       "packageName": "org.jhipster.health",
       "nativeLanguage": "en"
     },
-    "jhipsterVersion": "4.14.2",
+    "jhipsterVersion": "4.14.3",
     "baseName": "TwentyOnePoints",
     "packageName": "org.jhipster.health",
     "packageFolder": "org/jhipster/health",
@@ -22,7 +22,7 @@
     "buildTool": "gradle",
     "enableSocialSignIn": false,
     "enableSwaggerCodegen": false,
-    "jwtSecretKey": "d1aea1ebfdc28c9319f16350fd9b4aadaed45ea8",
+    "jwtSecretKey": "a23d09f2a452498c0b9d157d3ececf67f231256f",
     "clientFramework": "angularX",
     "useSass": true,
     "clientPackageManager": "yarn",
