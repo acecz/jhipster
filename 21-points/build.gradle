@@ -27,8 +27,8 @@ plugins {
 }
 
 apply plugin: 'java'
-sourceCompatibility=1.8
-targetCompatibility=1.8
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
 // Until JHipster supports JDK 9
 assert System.properties['java.specification.version'] == '1.8'
 
@@ -41,10 +41,10 @@ apply plugin: 'io.spring.dependency-management'
 apply plugin: 'idea'
 
 dependencyManagement {
-  imports {
-    mavenBom 'io.github.jhipster:jhipster-dependencies:' + jhipster_dependencies_version
-    //jhipster-needle-gradle-dependency-management - JHipster will add additional dependencies management here
-  }
+    imports {
+        mavenBom 'io.github.jhipster:jhipster-dependencies:' + jhipster_dependencies_version
+        //jhipster-needle-gradle-dependency-management - JHipster will add additional dependencies management here
+    }
 }
 
 defaultTasks 'bootRun'
@@ -55,7 +55,7 @@ version = '0.0.1-SNAPSHOT'
 description = ''
 
 bootRepackage {
-   mainClass = 'org.jhipster.health.TwentyOnePointsApp'
+    mainClass = 'org.jhipster.health.TwentyOnePointsApp'
 }
 
 war {
@@ -137,6 +137,9 @@ configurations {
 }
 
 repositories {
+    maven {
+        url "http://maven.aliyun.com/nexus/content/groups/public"
+    }
     mavenLocal()
     jcenter()
 }
@@ -184,7 +187,7 @@ dependencies {
     // https://github.com/elastic/elasticsearch/issues/13245
     compile "net.java.dev.jna:jna"
     compile "org.springframework.boot:spring-boot-starter-security"
-    compile ("org.springframework.boot:spring-boot-starter-web") {
+    compile("org.springframework.boot:spring-boot-starter-web") {
         exclude module: 'spring-boot-starter-tomcat'
     }
     compile "org.springframework.boot:spring-boot-starter-undertow"
@@ -196,14 +199,14 @@ dependencies {
     compile "org.springframework.security:spring-security-data"
     compile "org.springframework.security:spring-security-web"
     compile "io.jsonwebtoken:jjwt"
-    compile ("io.springfox:springfox-swagger2") {
+    compile("io.springfox:springfox-swagger2") {
         exclude module: 'mapstruct'
     }
     compile "io.springfox:springfox-bean-validators"
     compile "mysql:mysql-connector-java"
     compile "org.mapstruct:mapstruct-jdk8:${mapstruct_version}"
     testCompile "com.jayway.jsonpath:json-path"
-    testCompile ("org.springframework.boot:spring-boot-starter-test") {
+    testCompile("org.springframework.boot:spring-boot-starter-test") {
         exclude group: 'com.vaadin.external.google', module: 'android-json'
     }
     testCompile "org.springframework.security:spring-security-test"
@@ -213,7 +216,7 @@ dependencies {
     testCompile "org.mockito:mockito-core"
     testCompile "com.mattbertolini:liquibase-slf4j"
     testCompile "org.hamcrest:hamcrest-library"
-    optional ("org.springframework.boot:spring-boot-configuration-processor") {
+    optional("org.springframework.boot:spring-boot-configuration-processor") {
         exclude group: 'com.vaadin.external.google', module: 'android-json'
     }
     //jhipster-needle-gradle-dependency - JHipster will add additional dependencies here
@@ -241,5 +244,5 @@ if (project.hasProperty('nodeInstall')) {
 }
 
 compileJava.dependsOn processResources
-processResources.dependsOn cleanResources,bootBuildInfo
+processResources.dependsOn cleanResources, bootBuildInfo
 bootBuildInfo.mustRunAfter cleanResources
