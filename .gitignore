@@ -68,4 +68,5 @@ Desktop.ini
 
 !.yo-rc.json
 !.editorconfig
-!.angular-cli.json
+!.angular-cli.jsona
+!.npmrc
