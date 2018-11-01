@@ -1,0 +1,38 @@
+{
+  "generator-jhipster": {
+    "promptValues": {
+      "packageName": "cz.sio.demo.first",
+      "nativeLanguage": "en"
+    },
+    "jhipsterVersion": "5.5.0",
+    "applicationType": "monolith",
+    "baseName": "first",
+    "packageName": "cz.sio.demo.first",
+    "packageFolder": "cz/sio/demo/first",
+    "serverPort": "8080",
+    "authenticationType": "jwt",
+    "cacheProvider": "ehcache",
+    "enableHibernateCache": false,
+    "websocket": "spring-websocket",
+    "databaseType": "sql",
+    "devDatabaseType": "h2Disk",
+    "prodDatabaseType": "mysql",
+    "searchEngine": "elasticsearch",
+    "messageBroker": false,
+    "serviceDiscoveryType": false,
+    "buildTool": "gradle",
+    "enableSwaggerCodegen": true,
+    "jwtSecretKey": "ZTdhNWRiMWY1NTdmNmRhNzM3OGEzNTYxOTA5MDEzOWQzZDQzZTc3NmVkZjk2NDkxMzVkMzA4ZDhhYjYzMzI5ZDE0MzMzODhjZjg0MTZlM2ZjYzczNjI4Y2FhNTFjOTRlM2MxMzI0MzQzOGI0ZjU5NDI4ZGRkMjNhMGIyNDUwZTg=",
+    "clientFramework": "angularX",
+    "useSass": true,
+    "clientPackageManager": "npm",
+    "testFrameworks": [],
+    "jhiPrefix": "jhi",
+    "enableTranslation": true,
+    "nativeLanguage": "en",
+    "languages": [
+      "en",
+      "zh-cn"
+    ]
+  }
+}
