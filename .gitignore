@@ -1,11 +1,13 @@
-/*/build/www/**
+.*
+/*/node_modules/**
+
+/*/build/**
 /*/out/*
 /*/bin/*
 /*/deploy/*
 
 *.lock
 
-node_modules/*
 npm-debug.log.*
 
 # Intellij
