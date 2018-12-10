@@ -93,7 +93,7 @@ To configure CI for your project, run the ci-cd sub-generator (`jhipster ci-cd`)
 > use docker to install the MariaDb
 - #usermod -aG docker username
 - $docker pull mariadb
-- $docker run --name mariadb-dev -e MYSQL_ROOT_PASSWORD=root -d mariadb --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci --lower_case_table_names=1 --bind-address=0.0.0.0
+- $docker run --name mariadb-dev -p 3306:3306 -e MYSQL_ROOT_PASSWORD=root -d mariadb --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci --lower_case_table_names=1 --bind-address=0.0.0.0
 
 [JHipster Homepage and latest documentation]: https://www.jhipster.tech
 [JHipster 5.7.0 archive]: https://www.jhipster.tech/documentation-archive/v5.7.0
