@@ -1,0 +1,39 @@
+{
+  "generator-jhipster": {
+    "promptValues": {
+      "packageName": "cz.demo.ngsvr",
+      "nativeLanguage": "en"
+    },
+    "jhipsterVersion": "5.7.0",
+    "applicationType": "monolith",
+    "baseName": "ngsvr",
+    "packageName": "cz.demo.ngsvr",
+    "packageFolder": "cz/demo/ngsvr",
+    "serverPort": "8080",
+    "authenticationType": "jwt",
+    "cacheProvider": "ehcache",
+    "enableHibernateCache": true,
+    "websocket": "spring-websocket",
+    "databaseType": "sql",
+    "devDatabaseType": "mariadb",
+    "prodDatabaseType": "mariadb",
+    "searchEngine": "elasticsearch",
+    "messageBroker": false,
+    "serviceDiscoveryType": false,
+    "buildTool": "gradle",
+    "enableSwaggerCodegen": false,
+    "jwtSecretKey": "Y2Y0ODUxMmI4ZjdhODFjMWRhODRlNjhhYjFiZjQyM2Y5ODU5ZmE0MzVjNmVlZjM1NzE4ZjI3ZWFmZWI4NDVmM2NkN2E4ZmZmZTMzZjY4MGM1OTlmYmYxZmQxZTY2ZWM5YzQzZDBiODVmNjk5NTNlYmI2MzU5ZGRkNTg0NmVmNmE=",
+    "clientFramework": "angularX",
+    "useSass": true,
+    "clientPackageManager": "npm",
+    "testFrameworks": [],
+    "jhiPrefix": "jhi",
+    "otherModules": [],
+    "enableTranslation": true,
+    "nativeLanguage": "en",
+    "languages": [
+      "en",
+      "zh-cn"
+    ]
+  }
+}
